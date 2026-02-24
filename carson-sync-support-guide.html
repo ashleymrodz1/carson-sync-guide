@@ -73,9 +73,10 @@
       <tbody>
         <tr>
           <td><strong>Does not see the sync button</strong> for a provider</td>
-          <td><span class="badge badge-error">Failed to sync</span></td>
+          <td><span class="badge badge-error">Failed to sync</span> / <span class="badge badge-warn">Permission issue</span></td>
           <td>
             <ol style="margin-left:16px;line-height:1.8;">
+              <li><strong>Check permissions first</strong> — the user must have the "Perform Sync" permission enabled. See <strong>Roles &amp; Permissions</strong> at the bottom of this guide.</li>
               <li>Is the user <strong>Staff</strong>, <strong>Resident</strong>, or <strong>Visitor</strong>?</li>
               <li>Are they on <strong>Web</strong> or <strong>App</strong>?</li>
               <li>Which <strong>provider</strong> are they trying to sync?</li>
@@ -145,6 +146,11 @@
     <div class="step-title">Confirm Platform &amp; Provider — Then Follow the Right Path</div>
   </div>
   <div class="step-body">
+    <div class="callout callout-blue" style="margin-bottom: 16px; background: #eff6ff; border-left: 4px solid #3b82f6; padding: 12px 16px; border-radius: 6px; font-size: 13px;">
+      <strong>&#x2139;&#xFE0F; Web vs. Mobile — Key Difference</strong><br><br>
+      <strong>Web:</strong> Shows only the sync options that apply to this specific user (more accurate, fewer errors). There is a small chance a provider is incorrectly omitted. If a user asks <em>"why isn't [provider] showing as a sync option?"</em> — check permissions first, then see the Web tab below.<br><br>
+      <strong>Mobile:</strong> Sync options are determined at the building level, so more options may appear — but some may not apply to the individual user, and sync attempts may fail more often. If a user asks <em>"why is the [provider] sync failing?"</em> — the answer could be a real sync error, <em>or</em> simply that the user doesn't have access to any doors for that provider (the sync option doesn't apply to them).
+    </div>
     <div class="platform-tabs">
       <button class="tab-btn active" onclick="showTab('web', this)">&#127760; Web</button>
       <button class="tab-btn" onclick="showTab('api', this)">&#9881;&#65039; API</button>
@@ -180,8 +186,8 @@
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">building is <strong>associatedWithSmartair</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td><span class="condition">building is <strong>associatedWithBmx</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td><span class="condition">building is <strong>associatedWithDormakaba</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
-          <tr><td><span class="badge badge-neutral">Comelit</span></td><td><span class="condition">building is <strong>associatedWithComelit</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
-          <tr><td><span class="badge badge-neutral">2N</span></td><td><span class="condition">building is <strong>associatedWithTwoN</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
+          
+          
           <tr><td><span class="badge badge-neutral">Salto</span></td><td><span class="condition">building is <strong>associatedWithSalto</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><span class="condition">building is <strong>associatedWithKeyscan</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
         </tbody>
@@ -195,8 +201,8 @@
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">building is <strong>associatedWithSmartair</strong><br>AND person is NOT <strong>synchronizedWithSmartair</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td><span class="condition">building is <strong>associatedWithBmx</strong><br>AND person is NOT <strong>synchronizedWithBmx</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-warn">&#9888;&#65039; Pending — awaiting Joey's answer</span></td></tr>
           <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td><span class="condition">building is <strong>associatedWithDormakaba</strong><br>AND person is NOT <strong>synchronizedWithDormakaba</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Comelit</span></td><td><span class="condition">building is <strong>associatedWithComelit</strong><br>AND person is NOT <strong>synchronizedWithComelit</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">2N</span></td><td><span class="condition">building is <strong>associatedWithTwoN</strong><br>AND person is NOT <strong>synchronizedWithTwoN</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
+          
+          
           <tr><td><span class="badge badge-neutral">Salto</span></td><td><span class="condition">building is <strong>associatedWithSalto</strong><br>AND person is NOT <strong>synchronizedWithSalto</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><span class="condition">building is <strong>associatedWithKeyscan</strong><br>AND person is NOT <strong>synchronizedWithKeyscan</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
         </tbody>
@@ -220,7 +226,7 @@
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">SMARTAIR_ENABLED=True</span></td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Comelit</span></td><td>—</td></tr>
+          
           <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><em>No person sync</em></td></tr>
         </tbody>
@@ -234,7 +240,7 @@
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">SMARTAIR_ENABLED=True</span></td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Comelit</span></td><td><em>Residents only</em></td></tr>
+          
           <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><em>No person sync</em></td></tr>
         </tbody>
@@ -253,7 +259,7 @@
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Comelit</span></td><td>—</td></tr>
+          
           <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Keyscan</span></td><td>—</td></tr>
         </tbody>
@@ -267,7 +273,7 @@
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Comelit</span></td><td>—</td></tr>
+          
           <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
           <tr><td><span class="badge badge-neutral">Keyscan</span></td><td>—</td></tr>
         </tbody>
@@ -347,7 +353,7 @@
     <div class="door-card">
       <div class="door-card-header">&#128682; Comelit Doors</div>
       <div class="door-card-body">
-        <div class="callout callout-red">"Resync with 2N/Comelit" does <strong>NOT</strong> fix door-opening problems. (Confirmed by Joey)</div>
+        <div class="callout callout-red">"Resync with Comelit" does <strong>NOT</strong> fix door-opening problems. (Confirmed by Joey)</div>
         <ul style="margin-left:16px;line-height:1.8;">
           <li>Tag the ticket: <strong>"Support - Comelit - Online Door Issue"</strong></li>
         </ul>
@@ -397,7 +403,7 @@
     </ol>
 
     <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Sync Rate Limits by Provider</h3>
-    <p style="font-size:13px;margin-bottom:10px;color:#444;"><em>Note: In multi-provider scenarios, limits apply per provider. Example: A Concierge can sync 2 users via Two N + 2 via Dormakaba = 4 total in one minute.</em></p>
+    <p style="font-size:13px;margin-bottom:10px;color:#444;"><em>Note: In multi-provider scenarios, limits apply per provider. Example: A Concierge can sync 2 users via Brivo + 2 via Dormakaba = 4 total in one minute.</em></p>
     <table style="margin-bottom:20px;">
       <thead>
         <tr>
@@ -408,9 +414,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>Two N</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
-        <tr><td>Comelit</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
-        <tr><td>Akuvox</td><td>Not limited</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
+        
+        
+        
         <tr><td>Dormakaba</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>10 door sync calls per minute</td></tr>
         <tr><td>Brivo</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
         <tr><td>BMX</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
