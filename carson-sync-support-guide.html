@@ -559,6 +559,83 @@
     </div>
   </div>
 </div>
+
+<!-- SUPPLEMENTAL SECTION -->
+<div class="step-block">
+  <div class="step-header" style="background:#2c3e6b;">
+    <div class="step-title">&#128196; Supplemental Reference &mdash; Additional Ops Details</div>
+  </div>
+  <div class="step-body">
+
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Complete Roles &amp; Sync Permissions</h3>
+    <p style="font-size:13px;margin-bottom:10px;color:#444;">The following table shows all staff roles and their sync capabilities. The &ldquo;Allow Perform Sync&rdquo; permission must be enabled by a PMC Owner, Property Manager, or Admin for Concierge and Superintendent roles.</p>
+    <table style="margin-bottom:24px;">
+      <thead>
+        <tr><th>Role</th><th>Can sync residents?</th><th>Can sync visitors?</th><th>Can &ldquo;Sync All&rdquo;?</th><th>Can sync staff?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>HQ Admin</td><td><span class="badge badge-ok">Yes</span></td><td><span class="badge badge-ok">Yes</span></td><td><span class="badge badge-ok">Yes (HQ only)</span></td><td><span class="badge badge-ok">Yes</span></td></tr>
+        <tr><td>Property Manager</td><td><span class="badge badge-ok">Yes</span></td><td><span class="badge badge-ok">Yes</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-ok">Yes</span></td></tr>
+        <tr><td>Leasing Agent</td><td><span class="badge badge-warn">If enabled</span></td><td><span class="badge badge-warn">If enabled</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td></tr>
+        <tr><td>Maintenance / Handyman</td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td></tr>
+        <tr><td>Concierge</td><td><span class="badge badge-warn">If enabled</span></td><td><span class="badge badge-warn">If enabled</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td></tr>
+        <tr><td>Broker</td><td><span class="badge badge-neutral">No (treated as visitor)</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td><td><span class="badge badge-neutral">No</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-amber" style="margin-bottom:20px;">
+      <strong>&#9888;&#65039; Out-of-Scope Providers</strong><br>
+      2N, Comelit, and Akuvox are not currently part of the Staff Re-Sync feature. Any references to these providers throughout this guide can be disregarded for now. This information is being kept in place in case these providers are added to the sync feature in the future.
+    </div>
+
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">How to Enable Sync Permission for a Staff Member</h3>
+    <p style="font-size:13px;margin-bottom:10px;color:#444;">PMC Owners, Property Managers, and Admins can enable the &ldquo;Allow Perform Sync&rdquo; toggle for Concierge and Superintendent staff members.</p>
+    <ol style="margin-left:18px;font-size:13px;line-height:1.8;margin-bottom:20px;">
+      <li>Go to <strong>Buildings</strong> and click the building where the staff member works.</li>
+      <li>In the top navigation, click the <strong>Staff</strong> tab.</li>
+      <li>Find the Concierge or Superintendent and click <strong>Actions</strong>.</li>
+      <li>Go to the staff member&rsquo;s <strong>Details</strong> page, then click the <strong>Manage Roles</strong> tab (also accessible via Role &amp; Permissions in Staff Management).</li>
+      <li>Toggle ON the <strong>&ldquo;Allow Perform Sync&rdquo;</strong> permission and save changes &mdash; the sync button will now appear for that staff member.</li>
+    </ol>
+
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Brivo Sync Behavior (Provider-Specific)</h3>
+    <p style="font-size:13px;margin-bottom:20px;color:#444;">Brivo has unique two-step sync behavior: First sync shows &ldquo;Sync with Brivo&rdquo;. After the first sync, a second option &ldquo;Delete then Sync with Brivo&rdquo; appears. After delete-sync, it reverts back to &ldquo;Sync with Brivo&rdquo;. Other providers show single sync action only.</p>
+
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Where Sync Appears by Platform</h3>
+    <table style="margin-bottom:20px;">
+      <thead><tr><th>Platform</th><th>Location</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Web</strong></td><td>Buildings &rarr; Building &rarr; Staff/Residents/Visitor Management &rarr; Actions &rarr; Sync option (visible only if permission enabled)</td></tr>
+        <tr><td><strong>Mobile App</strong></td><td>Staff Management / Resident Management / Visitor Management &rarr; profiles &rarr; Sync Keys</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Visitor Sync Conditions by Provider</h3>
+    <table style="margin-bottom:20px;">
+      <thead><tr><th>Provider</th><th>Visitor sync conditions</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge badge-neutral">Brivo</span></td><td>Both &ldquo;Sync with Brivo&rdquo; and &ldquo;Delete then Sync with Brivo&rdquo; options available (same conditions as staff/residents)</td></tr>
+        <tr><td><span class="badge badge-neutral">Smartair</span></td><td>Requires building association</td></tr>
+        <tr><td><span class="badge badge-neutral">BMX</span></td><td>Requires building association</td></tr>
+        <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>Requires building association</td></tr>
+        <tr><td><span class="badge badge-neutral">Salto</span></td><td>Requires building association</td></tr>
+        <tr><td><span class="badge badge-neutral">Keyscan</span></td><td>Visitors can sync if registered and active</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Additional Error Types &amp; Solutions</h3>
+    <table>
+      <thead><tr><th>Error / Issue</th><th>Solution</th></tr></thead>
+      <tbody>
+        <tr><td>Key already exists (Duplicate key)</td><td>Use the &ldquo;Delete then Sync&rdquo; option if available.</td></tr>
+        <tr><td>&ldquo;Sync All&rdquo; button not visible</td><td>Only HQ Admins can use &ldquo;Sync All with&hellip;&rdquo; &mdash; check Roles &amp; Permissions.</td></tr>
+        <tr><td>Mobile sync not showing</td><td>Ensure you&rsquo;re navigating to Staff Management / Resident Management / Visitor Management and viewing profiles.</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
 <script>
   function showTab(tabName, btn) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
