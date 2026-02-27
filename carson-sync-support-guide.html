@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carson Sync &amp; Error Handling — Support Reference</title>
+  <title>Carson Sync &amp; Error Handling â Support Reference</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; color: #1a1a2e; background: #f5f6fa; padding: 32px 24px; }
@@ -46,11 +46,11 @@
 </head>
 <body>
 <h1>Carson Sync &amp; Error Handling</h1>
-<p class="subtitle">Support Reference — Use this guide to walk staff or residents through sync issues and errors step by step.</p>
+<p class="subtitle">Support Reference â Use this guide to walk staff or residents through sync issues and errors step by step.</p>
 
 <div class="callout callout-blue" style="margin-bottom:24px;">
   <strong>About Staff Re-Sync (Enhanced User Key Sync)</strong><br>
-  This feature lets authorized building staff — PMC Owners, Property Managers, Concierges, and Superintendents — manually re-sync digital keys for residents, staff, and visitors using the Carson platform. It helps resolve common access issues without contacting Carson Support, when the issue falls within supported conditions.<br><br>
+  This feature lets authorized building staff â PMC Owners, Property Managers, Concierges, and Superintendents â manually re-sync digital keys for residents, staff, and visitors using the Carson platform. It helps resolve common access issues without contacting Carson Support, when the issue falls within supported conditions.<br><br>
   <strong>When to use Staff Re-Sync:</strong> When users experience access issues such as a <em>"Digital Key Not Available"</em> message under the intended door (common with DormaKaba and Lyazon), a greyed-out "Unlock Door" button (common with Brivo), or the user cannot open the intended door (first troubleshooting step for DormaKaba).<br><br>
   <strong>Who can use it:</strong> Only specific staff roles can perform sync. The "Perform Sync" permission must be enabled for the user, which can be set by the Property Manager. Roles that can perform sync include: Superintendent, Concierge, and Admin-level roles.
 </div>
@@ -76,7 +76,7 @@
           <td><span class="badge badge-error">Failed to sync</span> / <span class="badge badge-warn">Permission issue</span></td>
           <td>
             <ol style="margin-left:16px;line-height:1.8;">
-              <li><strong>Check permissions first</strong> — the user must have the "Perform Sync" permission enabled. See <strong>Roles &amp; Permissions</strong> at the bottom of this guide.</li>
+              <li><strong>Check permissions first</strong> â the user must have the "Perform Sync" permission enabled. See <strong>Roles &amp; Permissions</strong> at the bottom of this guide.</li>
               <li>Is the user <strong>Staff</strong>, <strong>Resident</strong>, or <strong>Visitor</strong>?</li>
               <li>Are they on <strong>Web</strong> or <strong>App</strong>?</li>
               <li>Which <strong>provider</strong> are they trying to sync?</li>
@@ -90,14 +90,14 @@
           <td>Ask user to wait 15 seconds and try again.</td>
         </tr>
         <tr>
-          <td>"Oops — we encountered an error"</td>
+          <td>"Oops â we encountered an error"</td>
           <td><span class="badge badge-neutral">Generic error</span></td>
           <td>Escalate; gather details and create a bug ticket if the issue persists.</td>
         </tr>
         <tr>
           <td>User does not see <strong>any doors</strong></td>
           <td><span class="badge badge-neutral">No door access (HQ only)</span></td>
-          <td>Person does not have access to any door. See <strong>Step 3 – Door Opening Support</strong> below.</td>
+          <td>Person does not have access to any door. See <strong>Step 3 â Door Opening Support</strong> below.</td>
         </tr>
         <tr>
           <td><strong>"Failed to create Dormakaba mobile keys"</strong></td>
@@ -132,7 +132,7 @@
         <tr>
           <td>User still cannot open door after a successful sync</td>
           <td><span class="badge badge-ok">Post-sync issue</span></td>
-          <td>See <strong>Step 3 – Door Opening Support</strong> below.</td>
+          <td>See <strong>Step 3 â Door Opening Support</strong> below.</td>
         </tr>
       </tbody>
     </table>
@@ -143,17 +143,16 @@
 <div class="step-block">
   <div class="step-header">
     <div class="step-num">2</div>
-    <div class="step-title">Confirm Platform &amp; Provider — Then Follow the Right Path</div>
+    <div class="step-title">Confirm Platform &amp; Provider â Then Follow the Right Path</div>
   </div>
   <div class="step-body">
     <div class="callout callout-blue" style="margin-bottom: 16px; background: #eff6ff; border-left: 4px solid #3b82f6; padding: 12px 16px; border-radius: 6px; font-size: 13px;">
-      <strong>&#x2139;&#xFE0F; Web vs. Mobile — Key Difference</strong><br><br>
-      <strong>Web:</strong> Shows only the sync options that apply to this specific user (more accurate, fewer errors). There is a small chance a provider is incorrectly omitted. If a user asks <em>"why isn't [provider] showing as a sync option?"</em> — check permissions first, then see the Web tab below.<br><br>
-      <strong>Mobile:</strong> Sync options are determined at the building level, so more options may appear — but some may not apply to the individual user, and sync attempts may fail more often. If a user asks <em>"why is the [provider] sync failing?"</em> — the answer could be a real sync error, <em>or</em> simply that the user doesn't have access to any doors for that provider (the sync option doesn't apply to them).
+      <strong>&#x2139;&#xFE0F; Web vs. Mobile â Key Difference</strong><br><br>
+      <strong>Web:</strong> Shows only the sync options that apply to this specific user (more accurate, fewer errors). There is a small chance a provider is incorrectly omitted. If a user asks <em>"why isn't [provider] showing as a sync option?"</em> â check permissions first, then see the Web tab below.<br><br>
+      <strong>Mobile:</strong> Sync options are determined at the building level, so more options may appear â but some may not apply to the individual user, and sync attempts may fail more often. If a user asks <em>"why is the [provider] sync failing?"</em> â the answer could be a real sync error, <em>or</em> simply that the user doesn't have access to any doors for that provider (the sync option doesn't apply to them).
     </div>
     <div class="platform-tabs">
       <button class="tab-btn active" onclick="showTab('web', this)">&#127760; Web</button>
-      <button class="tab-btn" onclick="showTab('api', this)">&#9881;&#65039; API</button>
       <button class="tab-btn" onclick="showTab('mobile', this)">&#128242; Mobile</button>
     </div>
 
@@ -162,7 +161,7 @@
       <div class="callout callout-blue">The <strong>current user must be allowed to perform sync</strong> to see the sync options on Web.</div>
       <div class="section-label">Staff &amp; Residents</div>
       <table>
-        <thead><tr><th>Provider</th><th>Condition to show sync</th><th>If condition NOT met</th><th>If condition IS met — next steps</th></tr></thead>
+        <thead><tr><th>Provider</th><th>Condition to show sync</th><th>If condition NOT met</th><th>If condition IS met â next steps</th></tr></thead>
         <tbody>
           <tr>
             <td><span class="badge badge-neutral">Brivo</span> Sync</td>
@@ -174,14 +173,14 @@
               <li><strong>Tier 2:</strong> Access Brivo accounts and confirm number of BMPs (Brivo Mobile Passes available).</li>
               <li>Confirm user is in the correct group with a BMP assigned.</li>
               <li>Tier 2 can also attempt delete and re-sync via Postman.</li>
-              <li>If all steps fail → <span class="badge badge-error">create a bug ticket</span>.</li>
+              <li>If all steps fail â <span class="badge badge-error">create a bug ticket</span>.</li>
             </ul></td>
           </tr>
           <tr>
             <td><span class="badge badge-neutral">Brivo</span> Re-sync</td>
             <td><span class="condition">building is <strong>associatedWithBrivo</strong><br>AND person is registered AND person is <strong>synchronizedWithBrivo</strong></span></td>
             <td>Ask the impacted user to <strong>register</strong>.</td>
-            <td>—</td>
+            <td>â</td>
           </tr>
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">building is <strong>associatedWithSmartair</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">BMX</span></td><td><span class="condition">building is <strong>associatedWithBmx</strong></span></td><td>n/a</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
@@ -194,91 +193,199 @@
       </table>
       <div class="section-label">Visitors</div>
       <table>
-        <thead><tr><th>Provider</th><th>Condition to show sync</th><th>If condition NOT met</th><th>If condition IS met — next steps</th></tr></thead>
+        <thead><tr><th>Provider</th><th>Condition to show sync</th><th>If condition NOT met</th><th>If condition IS met â next steps</th></tr></thead>
         <tbody>
           <tr><td><span class="badge badge-neutral">Brivo</span> Sync</td><td><span class="condition">building is <strong>associatedWithBrivo</strong><br>AND person is NOT <strong>synchronizedWithBrivo</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">Brivo</span> Re-sync</td><td><span class="condition">building is <strong>associatedWithBrivo</strong><br>AND person IS <strong>synchronizedWithBrivo</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
           <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">building is <strong>associatedWithSmartair</strong><br>AND person is NOT <strong>synchronizedWithSmartair</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-error">Create a bug ticket</span></td></tr>
-          <tr><td><span class="badge badge-neutral">BMX</span></td><td><span class="condition">building is <strong>associatedWithBmx</strong><br>AND person is NOT <strong>synchronizedWithBmx</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-warn">&#9888;&#65039; Pending — awaiting Joey's answer</span></td></tr>
-          <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td><span class="condition">building is <strong>associatedWithDormakaba</strong><br>AND person is NOT <strong>synchronizedWithDormakaba</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
+          <tr><td><span class="badge badge-neutral">BMX</span></td><td><span class="condition">building is <strong>associatedWithBmx</strong><br>AND person is NOT <strong>synchronizedWithBmx</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td><span class="badge badge-warn">&#9888;&#65039; Pending â awaiting Joey's answer</span></td></tr>
+          <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td><span class="condition">building is <strong>associatedWithDormakaba</strong><br>AND person is NOT <strong>synchronizedWithDormakaba</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>â</td></tr>
           
           
-          <tr><td><span class="badge badge-neutral">Salto</span></td><td><span class="condition">building is <strong>associatedWithSalto</strong><br>AND person is NOT <strong>synchronizedWithSalto</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><span class="condition">building is <strong>associatedWithKeyscan</strong><br>AND person is NOT <strong>synchronizedWithKeyscan</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>—</td></tr>
+          <tr><td><span class="badge badge-neutral">Salto</span></td><td><span class="condition">building is <strong>associatedWithSalto</strong><br>AND person is NOT <strong>synchronizedWithSalto</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>â</td></tr>
+          <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><span class="condition">building is <strong>associatedWithKeyscan</strong><br>AND person is NOT <strong>synchronizedWithKeyscan</strong></span></td><td>Ask the impacted user to <strong>sync</strong>.</td><td>â</td></tr>
         </tbody>
       </table>
     </div>
-    <!-- API TAB -->
-    <div id="tab-api" class="tab-panel">
-      <p style="font-size:13px;margin-bottom:12px;color:#444;"><strong>Common conditions for ALL API syncs:</strong></p>
-      <ul style="margin-left:18px;font-size:13px;line-height:1.8;margin-bottom:16px;">
-        <li>Building must be associated with the provider (proper account configuration)</li>
-        <li>Person running the sync must be an <strong>admin or staff</strong></li>
-        <li>Person being synced must be a <strong>staff, resident, or visitor</strong> in the building</li>
-        <li>Visitors must be <strong>active</strong></li>
-      </ul>
-      <div class="section-label">Staff &amp; Residents</div>
-      <table>
-        <thead><tr><th>Provider</th><th>Sync enabled condition / notes</th></tr></thead>
-        <tbody>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Sync</td><td><span class="condition">BRIVO_SYNC_ENABLED=True</span></td></tr>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Re-sync</td><td><span class="condition">BRIVO_SYNC_ENABLED=True</span></td></tr>
-          <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">SMARTAIR_ENABLED=True</span></td></tr>
-          <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          
-          <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><em>No person sync</em></td></tr>
-        </tbody>
-      </table>
-      <div class="section-label">Visitors</div>
-      <table>
-        <thead><tr><th>Provider</th><th>Sync enabled condition / notes</th></tr></thead>
-        <tbody>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Sync</td><td><span class="condition">BRIVO_SYNC_ENABLED=True</span></td></tr>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Re-sync</td><td><span class="condition">BRIVO_SYNC_ENABLED=True</span></td></tr>
-          <tr><td><span class="badge badge-neutral">Smartair</span></td><td><span class="condition">SMARTAIR_ENABLED=True</span></td></tr>
-          <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          
-          <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Keyscan</span></td><td><em>No person sync</em></td></tr>
-        </tbody>
-      </table>
-    </div>
-
     <!-- MOBILE TAB -->
-    <div id="tab-mobile" class="tab-panel">
-      <p style="font-size:13px;margin-bottom:12px;color:#444;">Determined by user's <strong>buildingId</strong> against the provider list from the API endpoint. See ticket: <strong>Mobile — Brivo Sync (Staff &amp; Residents): CLP-59: API — Sync for Mobile: Endpoint for provider list (DONE)</strong></p>
-      <div class="section-label">Staff &amp; Residents</div>
-      <table>
-        <thead><tr><th>Provider</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Sync</td><td>By user's <strong>buildingId</strong> per provider list from API (see CLP-59)</td></tr>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Re-sync</td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Smartair</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          
-          <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Keyscan</span></td><td>—</td></tr>
-        </tbody>
-      </table>
-      <div class="section-label">Visitors</div>
-      <table>
-        <thead><tr><th>Provider</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Sync</td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Brivo</span> Re-sync</td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Smartair</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">BMX</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Dormakaba</span></td><td>—</td></tr>
-          
-          <tr><td><span class="badge badge-neutral">Salto</span></td><td>—</td></tr>
-          <tr><td><span class="badge badge-neutral">Keyscan</span></td><td>—</td></tr>
-        </tbody>
-      </table>
-    </div>
+          <!-- MOBILE TAB -->
+      <div id="tab-mobile" class="tab-panel">
+        <p style="font-size:13px;margin-bottom:12px;color:#444;">Determined by user's <strong>buildingId</strong> against the provider list from the API endpoint. See ticket: <a href="https://carsonliving.atlassian.net/browse/CLP-59" target="_blank">CLP-59: API — Sync for Mobile: Endpoint for provider list (DONE)</a></p>
+        <div class="section-label">Staff &amp; Residents</div>
+        <table>
+          <thead><tr><th>Provider</th><th>Conditions include</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-neutral">Brivo</span> Sync</td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul><span class="condition" style="margin-top:6px;display:inline-block;">BRIVO_SYNC_ENABLED=True</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Brivo</span> Re-sync</td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul><span class="condition" style="margin-top:6px;display:inline-block;">BRIVO_SYNC_ENABLED=True</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Smartair</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul><span class="condition" style="margin-top:6px;display:inline-block;">SMARTAIR_ENABLED=True</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">BMX</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Dormakaba</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Comelit</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">2N</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Salto</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Keyscan</span></td>
+              <td><em>No person sync</em></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="section-label">Visitors</div>
+        <table>
+          <thead><tr><th>Provider</th><th>Conditions include</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-neutral">Brivo</span> Sync</td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul><span class="condition" style="margin-top:6px;display:inline-block;">BRIVO_SYNC_ENABLED=True</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Brivo</span> Re-sync</td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul><span class="condition" style="margin-top:6px;display:inline-block;">BRIVO_SYNC_ENABLED=True</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Smartair</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul><span class="condition" style="margin-top:6px;display:inline-block;">SMARTAIR_ENABLED=True</span></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">BMX</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Dormakaba</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Comelit</span></td>
+              <td><em>Only for residents</em></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">2N</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Salto</span></td>
+              <td><ul style="margin-left:16px;line-height:1.8;font-size:13px;">
+              <li>By user's <strong>buildingId</strong></li>
+              <li>Building should be associated with the provider (proper account configuration)</li>
+              <li>Person who runs the sync is an <strong>admin or staff</strong></li>
+              <li>Person being synced is a <strong>staff, resident, or visitor</strong> in the building</li>
+              <li>Visitors must be <strong>active</strong></li>
+            </ul></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-neutral">Keyscan</span></td>
+              <td><em>No person sync</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
   </div>
 </div>
 
@@ -305,8 +412,8 @@
       <div class="door-card-header">Tier 2 Additional Checks:</div>
       <div class="door-card-body">
         <ol style="margin-left:16px;line-height:1.8;">
-          <li>Check "Service Manager" — ensure all services are enabled.</li>
-          <li>Verify port forwarding is enabled — confirm port 8083 is open at canyouseeme.org.</li>
+          <li>Check "Service Manager" â ensure all services are enabled.</li>
+          <li>Verify port forwarding is enabled â confirm port 8083 is open at canyouseeme.org.</li>
           <li>If open, send the public IP to Carson Support.</li>
           <li>If not open, get the customer's IT team involved.</li>
           <li>Reach out to Carson Support if further assistance is needed.</li>
@@ -314,24 +421,24 @@
       </div>
     </div>
 
-    <div class="callout callout-red" style="margin-top:16px;"><strong>Error: "Cannot sync with Dormakaba — Person does not have access to community doors"</strong></div>
+    <div class="callout callout-red" style="margin-top:16px;"><strong>Error: "Cannot sync with Dormakaba â Person does not have access to community doors"</strong></div>
     <div class="door-card">
       <div class="door-card-header">Most common use cases for this error:</div>
-      <div class="door-card-body">Tower 77 (fob user) · Super/Handyman role (allowed to open unit doors) · Check what is logged.</div>
+      <div class="door-card-body">Tower 77 (fob user) Â· Super/Handyman role (allowed to open unit doors) Â· Check what is logged.</div>
     </div>
     <div class="door-card">
       <div class="door-card-header">Steps to flag to Tier 2:</div>
       <div class="door-card-body">
         <ol style="margin-left:16px;line-height:1.8;">
           <li>Login to Dormakaba.</li>
-          <li>Navigate to <strong>Programming &amp; Auditing → Programming</strong>.</li>
-          <li>Select unit [unit#] → Transfer to maintenance unit.</li>
+          <li>Navigate to <strong>Programming &amp; Auditing â Programming</strong>.</li>
+          <li>Select unit [unit#] â Transfer to maintenance unit.</li>
           <li>Go to the door using the HH6 and program the door lock.</li>
         </ol>
       </div>
     </div>
 
-    <div class="section-label" style="margin-top:20px;">Door Opening Support — "I can't open the door using the app"</div>
+    <div class="section-label" style="margin-top:20px;">Door Opening Support â "I can't open the door using the app"</div>
     <div class="callout callout-blue">
       <strong>First, confirm two things with the user:</strong>
       <ol style="margin-left:16px;margin-top:8px;line-height:1.8;">
@@ -357,7 +464,7 @@
         <ul style="margin-left:16px;line-height:1.8;">
           <li>Tag the ticket: <strong>"Support - Comelit - Online Door Issue"</strong></li>
         </ul>
-        <div class="callout callout-amber" style="margin-top:10px;"><strong>OOO escalation:</strong> If Andrew is out → flag to Cam · If Cam is also out → flag to Joey</div>
+        <div class="callout callout-amber" style="margin-top:10px;"><strong>OOO escalation:</strong> If Andrew is out â flag to Cam Â· If Cam is also out â flag to Joey</div>
       </div>
     </div>
 
@@ -367,9 +474,9 @@
         <ul style="margin-left:16px;line-height:1.8;">
           <li>Advise the resident to make sure their <strong>Carson account is linked to their ButterflyMX account</strong>. Provide step-by-step instructions [link to instructions].</li>
           <li>Tag the ticket: <strong>"Support - BMX - Online Door Issue"</strong></li>
-          <li>If the resident confirms accounts are linked but still can't open the door → flag to <strong>Brivo Tier 2</strong>.</li>
+          <li>If the resident confirms accounts are linked but still can't open the door â flag to <strong>Brivo Tier 2</strong>.</li>
         </ul>
-        <div class="callout callout-amber" style="margin-top:10px;"><strong>OOO escalation:</strong> If Andrew is out → flag to Joey · If Joey is also out → flag to Cam · If both out → flag to Luke</div>
+        <div class="callout callout-amber" style="margin-top:10px;"><strong>OOO escalation:</strong> If Andrew is out â flag to Joey Â· If Joey is also out â flag to Cam Â· If both out â flag to Luke</div>
       </div>
     </div>
 
@@ -380,7 +487,7 @@
           <li>If a Dormakaba door: <strong>try resyncing</strong> the user with Dormakaba and ask the resident to close and reopen the app, then try again.</li>
           <li>Tag the ticket: <strong>"Support - Brivo - Online Door Issue"</strong></li>
         </ul>
-        <div class="callout callout-amber" style="margin-top:10px;"><strong>OOO escalation:</strong> If Andrew is out → flag to Joey · If Joey is also out → flag to Cam · If both out → flag to Luke</div>
+        <div class="callout callout-amber" style="margin-top:10px;"><strong>OOO escalation:</strong> If Andrew is out â flag to Joey Â· If Joey is also out â flag to Cam Â· If both out â flag to Luke</div>
       </div>
     </div>
   </div>
@@ -396,10 +503,10 @@
     <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Why Sync Might Fail</h3>
     <p style="font-size:13px;margin-bottom:12px;color:#444;">Sometimes syncing doesn't work as expected. Here are the most common reasons:</p>
     <ol style="margin-left:18px;font-size:13px;line-height:1.7;color:#333;margin-bottom:20px;">
-      <li><strong>Integration settings are incorrect</strong> — The connection between Carson and the access control system may not be set up properly (wrong credentials or missing configuration).</li>
-      <li><strong>Problems on the provider's side</strong> — The access control system (Dormakaba, Brivo, Salto, etc.) could be offline or experiencing technical issues.</li>
-      <li><strong>User access isn't set up correctly</strong> — The person doesn't have the right permissions or isn't linked to any doors for that provider.</li>
-      <li><strong>Too many sync attempts in a short time</strong> — Each provider has limits on how often you can sync. Attempting too many syncs too quickly will temporarily block new requests.</li>
+      <li><strong>Integration settings are incorrect</strong> â The connection between Carson and the access control system may not be set up properly (wrong credentials or missing configuration).</li>
+      <li><strong>Problems on the provider's side</strong> â The access control system (Dormakaba, Brivo, Salto, etc.) could be offline or experiencing technical issues.</li>
+      <li><strong>User access isn't set up correctly</strong> â The person doesn't have the right permissions or isn't linked to any doors for that provider.</li>
+      <li><strong>Too many sync attempts in a short time</strong> â Each provider has limits on how often you can sync. Attempting too many syncs too quickly will temporarily block new requests.</li>
     </ol>
 
     <h3 style="font-size:14px;font-weight:700;margin-bottom:10px;color:#1a1a2e;">Sync Rate Limits by Provider</h3>
@@ -418,10 +525,10 @@
         
         
         <tr><td>Dormakaba</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>10 door sync calls per minute</td></tr>
-        <tr><td>Brivo</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
-        <tr><td>BMX</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
-        <tr><td>Salto</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
-        <tr><td>SmartAir</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>—</td></tr>
+        <tr><td>Brivo</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>â</td></tr>
+        <tr><td>BMX</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>â</td></tr>
+        <tr><td>Salto</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>â</td></tr>
+        <tr><td>SmartAir</td><td>Up to 3 syncs in 5 minutes</td><td>Up to 2 syncs per minute</td><td>â</td></tr>
       </tbody>
     </table>
 
@@ -439,9 +546,9 @@
         <tr><th>Error Message</th><th>Category</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <tr><td>Too many sync requests…</td><td><span class="badge badge-error">Sync-related</span></td><td>Wait and retry later.</td></tr>
-        <tr><td>Person does not have access to any doors…</td><td><span class="badge badge-error">Sync-related</span></td><td>Check user permissions in Carson.</td></tr>
-        <tr><td>Failed to create Dormakaba mobile keys…</td><td><span class="badge badge-warn">Provider issue</span></td><td>Escalate to Tier 2 to <span class="badge badge-error">Create a bug ticket</span>. See Step 3 for Tier 1/2 troubleshooting.</td></tr>
+        <tr><td>Too many sync requestsâ¦</td><td><span class="badge badge-error">Sync-related</span></td><td>Wait and retry later.</td></tr>
+        <tr><td>Person does not have access to any doorsâ¦</td><td><span class="badge badge-error">Sync-related</span></td><td>Check user permissions in Carson.</td></tr>
+        <tr><td>Failed to create Dormakaba mobile keysâ¦</td><td><span class="badge badge-warn">Provider issue</span></td><td>Escalate to Tier 2 to <span class="badge badge-error">Create a bug ticket</span>. See Step 3 for Tier 1/2 troubleshooting.</td></tr>
         <tr><td>Building must have Brivo account assigned.</td><td><span class="badge badge-warn">Setup issue</span></td><td>Escalate to Tier 2 to <span class="badge badge-error">Create a bug ticket</span>.</td></tr>
         <tr><td>No matching unit is found for Dormakaba access point</td><td><span class="badge badge-error">Sync-related</span></td><td>Escalate to Tier 2 to <span class="badge badge-error">Create a bug ticket</span>.</td></tr>
         <tr><td>Cannot connect to community</td><td><span class="badge badge-info">Hardware/Network</span></td><td>Confirm the PC hosting Dormakaba is powered on, connected to the internet, and has Anydesk software running. If confirmed, escalate to Tier 2 to <span class="badge badge-error">Create a bug ticket</span>.</td></tr>
@@ -450,14 +557,14 @@
       </tbody>
     </table>
 
-    <h3 style="font-size:14px;font-weight:700;margin-top:20px;margin-bottom:10px;color:#1a1a2e;">Staff Re-Sync — Who Can Perform Sync</h3>
+    <h3 style="font-size:14px;font-weight:700;margin-top:20px;margin-bottom:10px;color:#1a1a2e;">Staff Re-Sync â Who Can Perform Sync</h3>
     <p style="font-size:13px;margin-bottom:10px;color:#444;">Only specific staff roles can perform sync actions. The <strong>"Perform Sync"</strong> permission must be enabled for the user and may be enabled by the Property Manager.</p>
     <div class="callout callout-blue">
       <strong>To update sync permissions for Superintendent and Concierge roles:</strong>
       <ol style="margin-left:16px;margin-top:6px;font-size:13px;line-height:1.7;">
-        <li>Log in to the Carson Web Admin → navigate to <strong>Buildings</strong> → click the building.</li>
-        <li>Open the <strong>Staff</strong> tab → locate the staff member → click their name to open Staff Details.</li>
-        <li>In Staff Details, click the <strong>Manage Roles</strong> tab → toggle ON <strong>"Allow Perform Sync"</strong>.</li>
+        <li>Log in to the Carson Web Admin â navigate to <strong>Buildings</strong> â click the building.</li>
+        <li>Open the <strong>Staff</strong> tab â locate the staff member â click their name to open Staff Details.</li>
+        <li>In Staff Details, click the <strong>Manage Roles</strong> tab â toggle ON <strong>"Allow Perform Sync"</strong>.</li>
       </ol>
     </div>
   </div>
